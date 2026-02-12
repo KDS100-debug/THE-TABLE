@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Table - Restaurant</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <!-- Logo and Name -->
+            <div class="navbar-brand">
+                <div class="navbar-logo">
+                    <img src="images/logo.png" alt="The Table Logo" class="logo-img">
+                </div>
+                <span class="restaurant-name">THE TABLE</span>
+            </div>
+
+            <!-- Navigation Items -->
+            <ul class="nav-items">
+                <li><a href="#home" class="nav-link">HOME</a></li>
+                <li><a href="#menu" class="nav-link">MENU</a></li>
+                <li><a href="#order" class="nav-link">ORDER</a></li>
+                <li><a href="#book" class="nav-link">BOOK TABLE</a></li>
+            </ul>
+
+            <!-- Mobile Menu Toggle -->
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Content -->
+    <main>
+        <section id="home" class="section">
+            <h1>Welcome to T<span class="highlight-letter">H</span>E TA<span class="highlight-letter">B</span>LE</h1>
+        </section>
+        <section id="menu" class="section">
+            <h2>Menu</h2>
+            
+            <!-- Menu Filters -->
+            <div class="menu-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="tea-snacks">Tea & Snacks</button>
+                <button class="filter-btn" data-filter="chinese">Chinese</button>
+                <button class="filter-btn" data-filter="fish">Fish</button>
+                <button class="filter-btn" data-filter="veg">Veg</button>
+                <button class="filter-btn" data-filter="assamese">Assamese</button>
+                <button class="filter-btn" data-filter="starters">Starters</button>
+                <button class="filter-btn" data-filter="main">Main Course</button>
+            </div>
+            
+            <!-- Tea & Snacks -->
+            <div class="menu-category" data-category="tea-snacks">
+                <h3>TEA & SNACKS</h3>
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <span class="item-icon">☕</span>
+                        <span class="item-name">Red Tea / Milk Tea</span>
+                        <span class="item-price">₹20</span>
+                    </div>
+                    <div class="menu-item">
+                        <span class="item-icon">🥘</span>
+                        <span class="item-name">Veg Pakora (10 pcs)</span>
+                        <span class="item-price">₹30</span>
+                    </div>
+                    <div class="menu-item">
+                        <span class="item-icon">🍞</span>
+                        <span class="item-name">Bread Pakora (2 pcs)</span>
+                        <span class="item-price">₹30</span>
+                    </div>
+                    <div class="menu-item">
+                        <span class="item-icon">🥚</span>
+                        <span class="item-name">Egg Pakora (2 pcs)</span>
+                        <span class="item-price">₹40</span>
+                    </div>
+                    <div class="menu-item">
+                        <span class="item-icon">🍗</span>
+                        <span class="item-name">Chicken Pakora (5 pcs)</span>
+                        <span class="item-price">₹50</span>
+                    </div>
+                    <div class="menu-item">
+                        <span class="item-icon">🫘</span>
+                        <span class="item-name">Ghugni (1 plate)</span>
+                        <span class="item-price">₹30</span>
+                    </div>
+                    <div class="menu-item">
+                        <span class="item-icon">🍲</span>
+                        <span class="item-name">Puri Bhaji (1 plate, 2 pcs)</span>
+                        <span class="item-price">₹50</span>
+                    </div>
+                    <div class="menu-item">
+                        <span class="item-icon">🥘</span>
+                        <span class="item-name">Roti Sabji (2 roti)</span>
+                        <span class="item-price">₹50</span>
+                    </div>
+                    <div class="menu-item">
+                        <span class="item-icon">🍚</span>
+                        <span class="item-name">Rajma Chawal (1 plate)</span>
+                        <span class="item-price">₹60</span>
+                    </div>
+                    <div class="menu-item">
+                        <span class="item-icon">🍚</span>
+                        <span class="item-name">Chole Chawal (1 plate)</span>
+                        <span class="item-price">₹60</span>
+                    </div>
+                    <div class="menu-item">
+                        <span class="item-icon">🍛</span>
+                        <span class="item-name">Roti with Chicken Curry</span>
+                        <span class="item-price">₹80</span>
+                    </div>
+                    <div class="menu-item">
+                        <span class="item-icon">🍛</span>
+                        <span class="item-name">Rice with Chicken Curry</span>
+                        <span class="item-price">₹100</span>
+                    </div>
+                    <div class="menu-item">
+                        <span class="item-icon">🍜</span>
+                        <span class="item-name">Veg Chowmein</span>
+                        <span class="item-price">₹50</span>
+                    </div>
+                    <div class="menu-item">
+                        <span class="item-icon">🍜</span>
+                        <span class="item-name">Egg Chowmein</span>
+                        <span class="item-price">₹70</span>
+                    </div>
+                    <div class="menu-item">
+                        <span class="item-icon">🍜</span>
+                        <span class="item-name">Chicken Chowmein</span>
+                        <span class="item-price">₹90</span>
+                    </div>
+                    <div class="menu-item">
+                        <span class="item-icon">🍜</span>
+                        <span class="item-name">Mix Chowmein</span>
+                        <span class="item-price">₹140</span>
+                    </div>
+                    <div class="menu-item">
+                        <span class="item-icon">🍜</span>
+                        <span class="item-name">Plain Maggi</span>
+                        <span class="item-price">₹50</span>
+                    </div>
+                    <div class="menu-item">
+                        <span class="item-icon">🍜</span>
+                        <span class="item-name">Veg Maggi</span>
+                        <span class="item-price">₹70</span>
+                    </div>
+                    <div class="menu-item">
+                        <span class="item-icon">🧀</span>
+                        <span class="item-name">Cheese Maggi</span>
+                        <span class="item-price">₹80</span>
+                    </div>
+                    <div class="menu-item">
+                        <span class="item-icon">🌯</span>
+                        <span class="item-name">Veg Roll</span>
+                        <span class="item-price">₹50</span>
+                    </div>
+                    <div class="menu-item">
+                        <span class="item-icon">🌯</span>
+                        <span class="item-name">Chicken Roll</span>
+                        <span class="item-price">₹80</span>
+                    </div>
+                    <div class="menu-item">
+                        <span class="item-icon">🌯</span>
+                        <span class="item-name">Egg Roll</span>
+                        <span class="item-price">₹80</span>
+                    </div>
+                    <div class="menu-item">
+                        <span class="item-icon">🌯</span>
+                        <span class="item-name">Special Mix Roll</span>
+                        <span class="item-price">₹120</span>
+                    </div>
+                    <div class="menu-item">
+                        <span class="item-icon">🥚</span>
+                        <span class="item-name">Plain Omelette (2 eggs)</span>
+                        <span class="item-price">₹40</span>
+                    </div>
+                    <div class="menu-item">
+                        <span class="item-icon">🧀</span>
+                        <span class="item-name">Cheese Omelette (2 eggs)</span>
+                        <span class="item-price">₹60</span>
+                    </div>
+                    <div class="menu-item">
+                        <span class="item-icon">🥚</span>
+                        <span class="item-name">Masala Omelette (2 eggs)</span>
+                        <span class="item-price">₹50</span>
+                    </div>
+                    <div class="menu-item">
+                        <span class="item-icon">🫓</span>
+                        <span class="item-name">Plain Paratha</span>
+                        <span class="item-price">₹40</span>
+                    </div>
+                    <div class="menu-item">
+                        <span class="item-icon">🫓</span>
+                        <span class="item-name">Aloo Paratha</span>
+                        <span class="item-price">₹60</span>
+                    </div>
+                    <div class="menu-item">
+                        <span class="item-icon">🫓</span>
+                        <span class="item-name">Paneer Paratha</span>
+                        <span class="item-price">₹80</span>
+                    </div>
+                    <div class="menu-item">
+                        <span class="item-icon">🫓</span>
+                        <span class="item-name">Gobi Paratha (Seasonal)</span>
+                        <span class="item-price">₹80</span>
+                    </div>
+                    <div class="menu-item">
+                        <span class="item-icon">🍚</span>
+                        <span class="item-name">Dal Chawal</span>
+                        <span class="item-price">₹80</span>
+                    </div>
+                    <div class="menu-item">
+                        <span class="item-icon">🍚</span>
+                        <span class="item-name">Dal Khichdi</span>
+                        <span class="item-price">₹80</span>
+                    </div>
+                    <div class="menu-item">
+                        <span class="item-icon">🍛</span>
+                        <span class="item-name">Egg Curry Rice (2 eggs)</span>
+                        <span class="item-price">₹140</span>
+                    </div>
+                    <div class="menu-item">
+                        <span class="item-icon">🐟</span>
+                        <span class="item-name">Fish Curry Rice (1 piece fish)</span>
+                        <span class="item-price">₹150</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Chinese Non-Veg -->
+            <div class="menu-category" data-category="chinese">
+                <h3>CHINESE – NON-VEG</h3>
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <span class="item-icon">🍗</span>
+                        <span class="item-name">Chilli Chicken</span>
+                        <span class="item-price">₹350</span>
+                    </div>
+                    <div class="menu-item">
+                        <span class="item-icon">🍗</span>
+                        <span class="item-name">Chicken Manchurian</span>
+                        <span class="item-price">₹350</span>
+                    </div>
+                    <div class="menu-item">
+                        <span class="item-icon">🍗</span>
+                        <span class="item-name">Garlic Butter Fry Chicken</span>
+                        <span class="item-price">₹350</span>
+                    </div>
+                    <div class="menu-item">
+                        <span class="item-icon">🍗</span>
+                        <span class="item-name">Kung Pao Chicken</span>
+                        <span class="item-price">₹350</span>
+                    </div>
+                    <div class="menu-item">
+                        <span class="item-icon">🍗</span>
+                        <span class="item-name">Chicken with Mushroom</span>
+                        <span class="item-price">₹350</span>
+                    </div>
+                    <div class="menu-item">
+                        <span class="item-icon">🍗</span>
+                        <span class="item-name">Chicken with Baby Corn</span>
+                        <span class="item-price">₹350</span>
+                    </div>
+                    <div class="menu-item">
+                        <span class="item-icon">🍗</span>
+                        <span class="item-name">Chicken Hot and Sour</span>
+                        <span class="item-price">₹350</span>
+                    </div>
+                    <div class="menu-item">
+                        <span class="item-icon">🍗</span>
+                        <span class="item-name">Chicken Sweet and Sour</span>
+                        <span class="item-price">₹350</span>
+                    </div>
+                    <div class="menu-item">
+                        <span class="item-icon">🍗</span>
+                        <span class="item-name">Chicken with Spinach, Mushroom & Baby Corn</span>
+                        <span class="item-price">₹350</span>
+                    </div>
+                    <div class="menu-item">
+                        <span class="item-icon">🍗</span>
+                        <span class="item-name">Shredded Chicken with Peanut Butter Sauce</span>
+                        <span class="item-price">₹350</span>
+                    </div>
+                    <div class="menu-item">
+                        <span class="item-icon">🍗</span>
+                        <span class="item-name">Lemon Chicken</span>
+                        <span class="item-price">₹350</span>
+                    </div>
+                    <div class="menu-item">
+                        <span class="item-icon">🥚</span>
+                        <span class="item-name">Egg Chilli</span>
+                        <span class="item-price">₹350</span>
+                    </div>
+                    <div class="menu-item">
+                        <span class="item-icon">🥚</span>
+                        <span class="item-name">Egg Mushroom</span>
+                        <span class="item-price">₹350</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Fish -->
+            <div class="menu-category" data-category="fish">
+                <h3>FISH</h3>
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <span class="item-icon">🐟</span>
+                        <span class="item-name">Chilli Fish</span>
+                        <span class="item-price">₹300</span>
+                    </div>
+                    <div class="menu-item">
+                        <span class="item-icon">🐟</span>
+                        <span class="item-name">Garlic Fish</span>
+                        <span class="item-price">₹350</span>
+                    </div>
+                    <div class="menu-item">
+                        <span class="item-icon">🐟</span>
+                        <span class="item-name">Fish in Schezwan Sauce</span>
+                        <span class="item-price">₹300</span>
+                    </div>
+                    <div class="menu-item">
+                        <span class="item-icon">🐟</span>
+                        <span class="item-name">Thai Fish (Red Curry / Green Curry)</span>
+                        <span class="item-price">₹350</span>
+                    </div>
+                    <div class="menu-item">
+                        <span class="item-icon">🐟</span>
+                        <span class="item-name">Fish in Oyster Sauce</span>
+                        <span class="item-price">₹350</span>
+                    </div>
+                    <div class="menu-item">
+                        <span class="item-icon">🐟</span>
+                        <span class="item-name">Fish in Hot Garlic Pepper</span>
+                        <span class="item-price">₹350</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Veg Selection -->
+            <div class="menu-category" data-category="veg">
+                <h3>VEG SELECTION</h3>
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <span class="item-icon">🥗</span>
+                        <span class="item-name">Veg Manchurian</span>
+                        <span class="item-price">₹300</span>
+                    </div>
+                    <div class="menu-item">
+                        <span class="item-icon">🥗</span>
+                        <span class="item-name">Cauliflower Manchurian</span>
+                        <span class="item-price">₹300</span>
+                    </div>
+                    <div class="menu-item">
+                        <span class="item-icon">🧀</span>
+                        <span class="item-name">Chilli Paneer</span>
+                        <span class="item-price">₹350</span>
+                    </div>
+                    <div class="menu-item">
+                        <span class="item-icon">🥗</span>
+                        <span class="item-name">Three Treasure Veg</span>
+                        <span class="item-price">₹300</span>
+                    </div>
+                    <div class="menu-item">
+                        <span class="item-icon">🥬</span>
+                        <span class="item-name">Spinach with Corn (Choice of Sauce)</span>
+                        <span class="item-price">₹320</span>
+                    </div>
+                    <div class="menu-item">
+                        <span class="item-icon">🥗</span>
+                        <span class="item-name">Sweet and Sour Veg</span>
+                        <span class="item-price">₹300</span>
+                    </div>
+                    <div class="menu-item">
+                        <span class="item-icon">🥔</span>
+                        <span class="item-name">Chilli Potato</span>
+                        <span class="item-price">₹275</span>
+                    </div>
+                    <div class="menu-item">
+                        <span class="item-icon">🍄</span>
+                        <span class="item-name">Mushroom (Choice of Sauce)</span>
+                        <span class="item-price">₹325</span>
+                    </div>
+                    <div class="menu-item">
+                        <span class="item-icon">🥗</span>
+                        <span class="item-name">Vegetable Thai Curry (with Steamed Rice)</span>
+                        <span class="item-price">₹350</span>
+                    </div>
+                    <div class="menu-item">
+                        <span class="item-icon">🍄</span>
+                        <span class="item-name">Mushroom, Green Peas & Baby Corn (Choice of Sauce)</span>
+                        <span class="item-price">₹325</span>
+                    </div>
+                    <div class="menu-item">
+                        <span class="item-icon">🍄</span>
+                        <span class="item-name">Devil Mushroom</span>
+                        <span class="item-price">₹325</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Assamese Menu -->
+            <div class="menu-category" data-category="assamese">
+                <h3>ASSAMESE MENU</h3>
+                <h4>Veg</h4>
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <span class="item-icon">🍛</span>
+                        <span class="item-name">The Table Special Veg Thali</span>
+                        <span class="item-price">₹350</span>
+                    </div>
+                    <div class="menu-item">
+                        <span class="item-icon">🥔</span>
+                        <span class="item-name">Alu Bhaji</span>
+                        <span class="item-price">₹200</span>
+                    </div>
+                    <div class="menu-item">
+                        <span class="item-icon">🥗</span>
+                        <span class="item-name">Bengena Alu Bhaji</span>
+                        <span class="item-price">₹225</span>
+                    </div>
+                    <div class="menu-item">
+                        <span class="item-icon">🥗</span>
+                        <span class="item-name">Koldilor Bhaji</span>
+                        <span class="item-price">₹250</span>
+                    </div>
+                </div>
+                <h4>Dal</h4>
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <span class="item-icon">🍲</span>
+                        <span class="item-name">Dail (Plain)</span>
+                        <span class="item-price">₹225</span>
+                    </div>
+                    <div class="menu-item">
+                        <span class="item-icon">🍲</span>
+                        <span class="item-name">Maati Dail</span>
+                        <span class="item-price">₹225</span>
+                    </div>
+                </div>
+                <h4>Fish Special</h4>
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <span class="item-icon">🐟</span>
+                        <span class="item-name">The Table Special Maas Tenga</span>
+                        <span class="item-price">₹350</span>
+                    </div>
+                    <div class="menu-item">
+                        <span class="item-icon">🐟</span>
+                        <span class="item-name">Horu Maas Bhoja</span>
+                        <span class="item-price">₹375</span>
+                    </div>
+                    <div class="menu-item">
+                        <span class="item-icon">🐟</span>
+                        <span class="item-name">The Table Special Maas'r Muri Ghonto</span>
+                        <span class="item-price">₹400</span>
+                    </div>
+                    <div class="menu-item">
+                        <span class="item-icon">🐟</span>
+                        <span class="item-name">Horu Maas (Patot Diya / Vapot Diya – Steamed)</span>
+                        <span class="item-price">₹400</span>
+                    </div>
+                </div>
+                <h4>Chicken (Broiler / Local)</h4>
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <span class="item-icon">🍗</span>
+                        <span class="item-name">Mati Dalir Hoite Kukura Mangkho</span>
+                        <span class="item-price">₹350 / ₹450</span>
+                    </div>
+                    <div class="menu-item">
+                        <span class="item-icon">🍗</span>
+                        <span class="item-name">Tilor Hoite Kukura Mangkho</span>
+                        <span class="item-price">₹350 / ₹450</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Non-Veg Starters -->
+            <div class="menu-category" data-category="starters">
+                <h3>NON-VEG STARTERS</h3>
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <span class="item-icon">🍗</span>
+                        <span class="item-name">Assorted Tandoori Platter (Non-Veg)</span>
+                        <span class="item-price">₹550</span>
+                    </div>
+                    <div class="menu-item">
+                        <span class="item-icon">🐟</span>
+                        <span class="item-name">Tandoori Fish Tikka</span>
+                        <span class="item-price">₹285</span>
+                    </div>
+                    <div class="menu-item">
+                        <span class="item-icon">🐟</span>
+                        <span class="item-name">Fish Masala Kebab</span>
+                        <span class="item-price">₹285</span>
+                    </div>
+                    <div class="menu-item">
+                        <span class="item-icon">🐟</span>
+                        <span class="item-name">Fish Hariyali Tikka</span>
+                        <span class="item-price">₹285</span>
+                    </div>
+                    <div class="menu-item">
+                        <span class="item-icon">🐟</span>
+                        <span class="item-name">Fish Afghani Tikka</span>
+                        <span class="item-price">₹285</span>
+                    </div>
+                    <div class="menu-item">
+                        <span class="item-icon">🦐</span>
+                        <span class="item-name">Tandoori Prawn</span>
+                        <span class="item-price">₹500</span>
+                    </div>
+                    <div class="menu-item">
+                        <span class="item-icon">🍗</span>
+                        <span class="item-name">Tandoori Chicken (Half / Full)</span>
+                        <span class="item-price">₹280 / ₹500</span>
+                    </div>
+                    <div class="menu-item">
+                        <span class="item-icon">🍗</span>
+                        <span class="item-name">Chicken Reshmi Kebab</span>
+                        <span class="item-price">₹325</span>
+                    </div>
+                    <div class="menu-item">
+                        <span class="item-icon">🍗</span>
+                        <span class="item-name">Chicken Cheese Malai Tikka</span>
+                        <span class="item-price">₹325</span>
+                    </div>
+                    <div class="menu-item">
+                        <span class="item-icon">🍗</span>
+                        <span class="item-name">Moroccan Chicken Tikka</span>
+                        <span class="item-price">₹325</span>
+                    </div>
+                    <div class="menu-item">
+                        <span class="item-icon">🍗</span>
+                        <span class="item-name">Hariyali Chicken Tikka</span>
+                        <span class="item-price">₹325</span>
+                    </div>
+                    <div class="menu-item">
+                        <span class="item-icon">🍗</span>
+                        <span class="item-name">Chicken Boti Kebab</span>
+                        <span class="item-price">₹325</span>
+                    </div>
+                    <div class="menu-item">
+                        <span class="item-icon">🍗</span>
+                        <span class="item-name">Chicken Khaas Seekh Kebab</span>
+                        <span class="item-price">₹325</span>
+                    </div>
+                    <div class="menu-item">
+                        <span class="item-icon">🍖</span>
+                        <span class="item-name">Mutton Khaas Seekh Kebab</span>
+                        <span class="item-price">₹400</span>
+                    </div>
+                    <div class="menu-item">
+                        <span class="item-icon">🍖</span>
+                        <span class="item-name">Mutton Burra Kebab</span>
+                        <span class="item-price">₹400</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Main Course Indian Veg -->
+            <div class="menu-category" data-category="main">
+                <h3>MAIN COURSE – INDIAN VEG</h3>
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <span class="item-icon">🧀</span>
+                        <span class="item-name">Paneer Lababdar</span>
+                        <span class="item-price">₹295</span>
+                    </div>
+                    <div class="menu-item">
+                        <span class="item-icon">🧀</span>
+                        <span class="item-name">Smoked Paneer Butter Masala</span>
+                        <span class="item-price">₹295</span>
+                    </div>
+                    <div class="menu-item">
+                        <span class="item-icon">🧀</span>
+                        <span class="item-name">Balti Paneer Khade Masala</span>
+                        <span class="item-price">₹295</span>
+                    </div>
+                    <div class="menu-item">
+                        <span class="item-icon">🧀</span>
+                        <span class="item-name">Paneer Kurchan</span>
+                        <span class="item-price">₹295</span>
+                    </div>
+                    <div class="menu-item">
+                        <span class="item-icon">🥬</span>
+                        <span class="item-name">Palak Paneer</span>
+                        <span class="item-price">₹295</span>
+                    </div>
+                    <div class="menu-item">
+                        <span class="item-icon">🫘</span>
+                        <span class="item-name">Matar Paneer</span>
+                        <span class="item-price">₹295</span>
+                    </div>
+                    <div class="menu-item">
+                        <span class="item-icon">🧀</span>
+                        <span class="item-name">Matar Paneer Bhurji</span>
+                        <span class="item-price">₹295</span>
+                    </div>
+                    <div class="menu-item">
+                        <span class="item-icon">🌽</span>
+                        <span class="item-name">Corn Palak</span>
+                        <span class="item-price">₹280</span>
+                    </div>
+                    <div class="menu-item">
+                        <span class="item-icon">🧀</span>
+                        <span class="item-name">Malai Kofta</span>
+                        <span class="item-price">₹295</span>
+                    </div>
+                    <div class="menu-item">
+                        <span class="item-icon">🧀</span>
+                        <span class="item-name">Shahi Paneer</span>
+                        <span class="item-price">₹295</span>
+                    </div>
+                    <div class="menu-item">
+                        <span class="item-icon">🥗</span>
+                        <span class="item-name">Veg Jalfrezi</span>
+                        <span class="item-price">₹280</span>
+                    </div>
+                    <div class="menu-item">
+                        <span class="item-icon">🥗</span>
+                        <span class="item-name">Navratn Korma</span>
+                        <span class="item-price">₹280</span>
+                    </div>
+                    <div class="menu-item">
+                        <span class="item-icon">🥗</span>
+                        <span class="item-name">Veg Makhanwala</span>
+                        <span class="item-price">₹295</span>
+                    </div>
+                    <div class="menu-item">
+                        <span class="item-icon">🥗</span>
+                        <span class="item-name">Aloo Gobhi (Seasonal)</span>
+                        <span class="item-price">₹295</span>
+                    </div>
+                    <div class="menu-item">
+                        <span class="item-icon">🥔</span>
+                        <span class="item-name">Aloo Jeera</span>
+                        <span class="item-price">₹280</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="book" class="section">
+            <h2>Book a Table</h2>
+            <div class="booking-form-container">
+                <form class="booking-form">
+                    <div class="form-group">
+                        <label for="people">Number of People</label>
+                        <select id="people" name="people" required>
+                            <option value="">Select number of people</option>
+                            <option value="1">1 </option>
+                            <option value="2">2 </option>
+                            <option value="3">3 </option>
+                            <option value="4">4 </option>
+                            <option value="5">5 </option>
+                            <option value="6">6 </option>
+                            <option value="7">7 </option>
+                            <option value="8">8 </option>
+                            <option value="9">9 </option>
+                            <option value="10">10+</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="date">Date</label>
+                        <input type="date" id="date" name="date" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="time">Time</label>
+                        <input type="time" id="time" name="time" required>
+                    </div>
+
+                    <button type="submit" class="book-btn">Book Table</button>
+                </form>
+            </div>
+        </section>
+        <section id="winner" class="section">
+            <h2>Weekly Lucky Customer</h2>
+            <div class="winner-container">
+                <div class="winner-card">
+                    <div class="winner-image-frame">
+                        <img src="images/logo.png" alt="Lucky Customer" class="winner-image">
+                    </div>
+                    <div class="winner-info">
+                        <h3 class="winner-name">Sarah Johnson</h3>
+                        <p class="winner-instagram">@sarahjohnson_95</p>
+                        <span class="winner-tag">🏆 LUCKY WINNER 🏆</span>
+                        <div class="winner-social-icons">
+                            <a href="#" class="winner-social-icon facebook" title="Facebook">
+                                <span>f</span>
+                            </a>
+                            <a href="#" class="winner-social-icon instagram" title="Instagram">
+                                <span>📷</span>
+                            </a>
+                            <a href="#" class="winner-social-icon twitter" title="Twitter">
+                                <span>𝕏</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="participation-note">
+                <p>📸 TO PARTICIPATE FOR WEEKLY LUCKY CUSTOMER TAKE A SELFIE IN "THE TABLE" AND TAG US IN SOCIAL PLATFORMS 📱</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- Restaurant Info -->
+            <div class="footer-section">
+                <h3>The Table</h3>
+                <p><strong>Location:</strong> 3rd Floor, Central Mall, GS Rd / GM Rd, Christian Basti, Guwahati, Assam 781005, India</p>
+                <p><strong>Phone:</strong> <a href="tel:+916002448164">+91 60024 48164</a></p>
+                <p><strong>Website:</strong> <a href="http://www.thetablerestro.com/" target="_blank">www.thetablerestro.com</a></p>
+                <p><strong>Distance from Railway Station:</strong> ~2.73 km</p>
+            </div>
+
+            <!-- Operating Hours -->
+            <div class="footer-section">
+                <h3>Hours</h3>
+                <p><strong>Daily:</strong> 11:00 AM – 10:00 PM</p>
+                <p><strong>Typical Visit Duration:</strong> ~1.5 hours</p>
+                <p><strong>Cuisines:</strong> North Indian, Chinese, Continental</p>
+                <p><strong>Average Cost:</strong> ₹1,000 for two people</p>
+            </div>
+
+            <!-- Services -->
+            <div class="footer-section">
+                <h3>Services</h3>
+                <ul>
+                    <li>Dine-in</li>
+                    <li>Takeaway</li>
+                    <li>Delivery</li>
+                    <li>No-contact Delivery</li>
+                    <li>Reservation Support</li>
+                </ul>
+            </div>
+
+            <!-- Amenities -->
+            <div class="footer-section">
+                <h3>Amenities</h3>
+                <ul>
+                    <li>Vegetarian Options</li>
+                    <li>Kids' Menu</li>
+                    <li>Salad Bar</li>
+                    <li>Coffee</li>
+                    <li>Halal Food</li>
+                    <li>Small Plates</li>
+                </ul>
+            </div>
+
+            <!-- Payments -->
+            <div class="footer-section">
+                <h3>Payments Accepted</h3>
+                <ul>
+                    <li>Debit Cards</li>
+                    <li>Meal Coupons</li>
+                    <li>NFC/Mobile Payments</li>
+                </ul>
+            </div>
+
+            <!-- Social Links -->
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="#" class="social-icon" title="Facebook">
+                        <span>f</span>
+                    </a>
+                    <a href="#" class="social-icon" title="Instagram">
+                        <span>📷</span>
+                    </a>
+                    <a href="#" class="social-icon" title="Twitter">
+                        <span>𝕏</span>
+                    </a>
+                    <a href="#" class="social-icon" title="Google Maps">
+                        <span>📍</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Copyright -->
+        <div class="footer-bottom">
+            <p>&copy; 2026 The Table (Guwahati). All rights reserved.</p>
+            <p>Rating: 4.3/5 | Multi-cuisine Dining Venue</p>
+        </div>
+    </footer>
