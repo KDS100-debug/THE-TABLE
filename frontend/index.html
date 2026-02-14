@@ -39,6 +39,34 @@
     <main>
         <section id="home" class="section">
             <h1>Welcome to T<span class="highlight-letter">H</span>E TA<span class="highlight-letter">B</span>LE</h1>
+            
+            <!-- Hovering Pictures Gallery Carousel -->
+            <div class="hovering-gallery">
+                <div class="gallery-carousel">
+                    <img src="images/1.png" alt="Restaurant image 1" class="gallery-img active" data-index="0">
+                    <img src="images/2.png" alt="Restaurant image 2" class="gallery-img" data-index="1">
+                    <img src="images/3.png" alt="Restaurant image 3" class="gallery-img" data-index="2">
+                    <img src="images/4.png" alt="Restaurant image 4" class="gallery-img" data-index="3">
+                    <img src="images/5.png" alt="Restaurant image 5" class="gallery-img" data-index="4">
+                    <img src="images/6.png" alt="Restaurant image 6" class="gallery-img" data-index="5">
+                    <img src="images/7.png" alt="Restaurant image 7" class="gallery-img" data-index="6">
+                    <img src="images/8.png" alt="Restaurant image 8" class="gallery-img" data-index="7">
+                </div>
+                <div class="carousel-controls">
+                    <button type="button" class="carousel-btn prev-btn">❮</button>
+                    <div class="carousel-indicators">
+                        <span class="indicator active" data-index="0"></span>
+                        <span class="indicator" data-index="1"></span>
+                        <span class="indicator" data-index="2"></span>
+                        <span class="indicator" data-index="3"></span>
+                        <span class="indicator" data-index="4"></span>
+                        <span class="indicator" data-index="5"></span>
+                        <span class="indicator" data-index="6"></span>
+                        <span class="indicator" data-index="7"></span>
+                    </div>
+                    <button type="button" class="carousel-btn next-btn">❯</button>
+                </div>
+            </div>
         </section>
         <section id="menu" class="section">
             <h2>Menu</h2>
@@ -59,174 +87,174 @@
             <div class="menu-category" data-category="tea-snacks">
                 <h3>TEA & SNACKS</h3>
                 <div class="menu-items">
-                    <div class="menu-item">
-                        <span class="item-icon">☕</span>
+                    <div class="menu-item" data-img="images/1.png">
                         <span class="item-name">Red Tea / Milk Tea</span>
+                        <span class="item-rating"><span class="stars">★★★★☆</span> 4.5</span>
                         <span class="item-price">₹20</span>
                     </div>
-                    <div class="menu-item">
-                        <span class="item-icon">🥘</span>
+                    <div class="menu-item" data-img="images/2.png">
                         <span class="item-name">Veg Pakora (10 pcs)</span>
+                        <span class="item-rating"><span class="stars">★★★★☆</span> 4.3</span>
                         <span class="item-price">₹30</span>
                     </div>
-                    <div class="menu-item">
-                        <span class="item-icon">🍞</span>
+                    <div class="menu-item" data-img="images/3.png">
                         <span class="item-name">Bread Pakora (2 pcs)</span>
+                        <span class="item-rating"><span class="stars">★★★★☆</span> 4.2</span>
                         <span class="item-price">₹30</span>
                     </div>
-                    <div class="menu-item">
-                        <span class="item-icon">🥚</span>
+                    <div class="menu-item" data-img="images/4.png">
                         <span class="item-name">Egg Pakora (2 pcs)</span>
+                        <span class="item-rating"><span class="stars">★★★★★</span> 4.6</span>
                         <span class="item-price">₹40</span>
                     </div>
-                    <div class="menu-item">
-                        <span class="item-icon">🍗</span>
+                    <div class="menu-item" data-img="images/5.png">
                         <span class="item-name">Chicken Pakora (5 pcs)</span>
+                        <span class="item-rating"><span class="stars">★★★★★</span> 4.8</span>
                         <span class="item-price">₹50</span>
                     </div>
-                    <div class="menu-item">
-                        <span class="item-icon">🫘</span>
+                    <div class="menu-item" data-img="images/6.png">
                         <span class="item-name">Ghugni (1 plate)</span>
+                        <span class="item-rating"><span class="stars">★★★★☆</span> 4.1</span>
                         <span class="item-price">₹30</span>
                     </div>
-                    <div class="menu-item">
-                        <span class="item-icon">🍲</span>
+                    <div class="menu-item" data-img="images/7.png">
                         <span class="item-name">Puri Bhaji (1 plate, 2 pcs)</span>
+                        <span class="item-rating"><span class="stars">★★★★☆</span> 4.4</span>
                         <span class="item-price">₹50</span>
                     </div>
-                    <div class="menu-item">
-                        <span class="item-icon">🥘</span>
+                    <div class="menu-item" data-img="images/8.png">
                         <span class="item-name">Roti Sabji (2 roti)</span>
+                        <span class="item-rating"><span class="stars">★★★★★</span> 4.7</span>
                         <span class="item-price">₹50</span>
                     </div>
-                    <div class="menu-item">
-                        <span class="item-icon">🍚</span>
+                    <div class="menu-item" data-img="images/1.png">
                         <span class="item-name">Rajma Chawal (1 plate)</span>
+                        <span class="item-rating"><span class="stars">★★★★☆</span> 4.2</span>
                         <span class="item-price">₹60</span>
                     </div>
-                    <div class="menu-item">
-                        <span class="item-icon">🍚</span>
+                    <div class="menu-item" data-img="images/2.png">
                         <span class="item-name">Chole Chawal (1 plate)</span>
+                        <span class="item-rating"><span class="stars">★★★★☆</span> 4.1</span>
                         <span class="item-price">₹60</span>
                     </div>
-                    <div class="menu-item">
-                        <span class="item-icon">🍛</span>
+                    <div class="menu-item" data-img="images/3.png">
                         <span class="item-name">Roti with Chicken Curry</span>
+                        <span class="item-rating"><span class="stars">★★★★★</span> 4.7</span>
                         <span class="item-price">₹80</span>
                     </div>
-                    <div class="menu-item">
-                        <span class="item-icon">🍛</span>
+                    <div class="menu-item" data-img="images/4.png">
                         <span class="item-name">Rice with Chicken Curry</span>
+                        <span class="item-rating"><span class="stars">★★★★★</span> 4.6</span>
                         <span class="item-price">₹100</span>
                     </div>
-                    <div class="menu-item">
-                        <span class="item-icon">🍜</span>
+                    <div class="menu-item" data-img="images/5.png">
                         <span class="item-name">Veg Chowmein</span>
+                        <span class="item-rating"><span class="stars">★★★★☆</span> 4.2</span>
                         <span class="item-price">₹50</span>
                     </div>
-                    <div class="menu-item">
-                        <span class="item-icon">🍜</span>
+                    <div class="menu-item" data-img="images/6.png">
                         <span class="item-name">Egg Chowmein</span>
+                        <span class="item-rating"><span class="stars">★★★★☆</span> 4.3</span>
                         <span class="item-price">₹70</span>
                     </div>
-                    <div class="menu-item">
-                        <span class="item-icon">🍜</span>
+                    <div class="menu-item" data-img="images/7.png">
                         <span class="item-name">Chicken Chowmein</span>
+                        <span class="item-rating"><span class="stars">★★★★★</span> 4.5</span>
                         <span class="item-price">₹90</span>
                     </div>
-                    <div class="menu-item">
-                        <span class="item-icon">🍜</span>
+                    <div class="menu-item" data-img="images/8.png">
                         <span class="item-name">Mix Chowmein</span>
+                        <span class="item-rating"><span class="stars">★★★★★</span> 4.6</span>
                         <span class="item-price">₹140</span>
                     </div>
-                    <div class="menu-item">
-                        <span class="item-icon">🍜</span>
+                    <div class="menu-item" data-img="images/1.png">
                         <span class="item-name">Plain Maggi</span>
+                        <span class="item-rating"><span class="stars">★★★★☆</span> 3.9</span>
                         <span class="item-price">₹50</span>
                     </div>
-                    <div class="menu-item">
-                        <span class="item-icon">🍜</span>
+                    <div class="menu-item" data-img="images/2.png">
                         <span class="item-name">Veg Maggi</span>
+                        <span class="item-rating"><span class="stars">★★★★☆</span> 4.0</span>
                         <span class="item-price">₹70</span>
                     </div>
-                    <div class="menu-item">
-                        <span class="item-icon">🧀</span>
+                    <div class="menu-item" data-img="images/3.png">
                         <span class="item-name">Cheese Maggi</span>
+                        <span class="item-rating"><span class="stars">★★★★☆</span> 4.1</span>
                         <span class="item-price">₹80</span>
                     </div>
-                    <div class="menu-item">
-                        <span class="item-icon">🌯</span>
+                    <div class="menu-item" data-img="images/4.png">
                         <span class="item-name">Veg Roll</span>
+                        <span class="item-rating"><span class="stars">★★★★☆</span> 4.2</span>
                         <span class="item-price">₹50</span>
                     </div>
-                    <div class="menu-item">
-                        <span class="item-icon">🌯</span>
+                    <div class="menu-item" data-img="images/5.png">
                         <span class="item-name">Chicken Roll</span>
+                        <span class="item-rating"><span class="stars">★★★★★</span> 4.4</span>
                         <span class="item-price">₹80</span>
                     </div>
-                    <div class="menu-item">
-                        <span class="item-icon">🌯</span>
+                    <div class="menu-item" data-img="images/6.png">
                         <span class="item-name">Egg Roll</span>
+                        <span class="item-rating"><span class="stars">★★★★☆</span> 4.3</span>
                         <span class="item-price">₹80</span>
                     </div>
-                    <div class="menu-item">
-                        <span class="item-icon">🌯</span>
+                    <div class="menu-item" data-img="images/7.png">
                         <span class="item-name">Special Mix Roll</span>
+                        <span class="item-rating"><span class="stars">★★★★★</span> 4.5</span>
                         <span class="item-price">₹120</span>
                     </div>
-                    <div class="menu-item">
-                        <span class="item-icon">🥚</span>
+                    <div class="menu-item" data-img="images/8.png">
                         <span class="item-name">Plain Omelette (2 eggs)</span>
+                        <span class="item-rating"><span class="stars">★★★★☆</span> 4.1</span>
                         <span class="item-price">₹40</span>
                     </div>
-                    <div class="menu-item">
-                        <span class="item-icon">🧀</span>
+                    <div class="menu-item" data-img="images/1.png">
                         <span class="item-name">Cheese Omelette (2 eggs)</span>
+                        <span class="item-rating"><span class="stars">★★★★☆</span> 4.2</span>
                         <span class="item-price">₹60</span>
                     </div>
-                    <div class="menu-item">
-                        <span class="item-icon">🥚</span>
+                    <div class="menu-item" data-img="images/2.png">
                         <span class="item-name">Masala Omelette (2 eggs)</span>
+                        <span class="item-rating"><span class="stars">★★★★☆</span> 4.3</span>
                         <span class="item-price">₹50</span>
                     </div>
-                    <div class="menu-item">
-                        <span class="item-icon">🫓</span>
+                    <div class="menu-item" data-img="images/3.png">
                         <span class="item-name">Plain Paratha</span>
+                        <span class="item-rating"><span class="stars">★★★★☆</span> 4.2</span>
                         <span class="item-price">₹40</span>
                     </div>
-                    <div class="menu-item">
-                        <span class="item-icon">🫓</span>
+                    <div class="menu-item" data-img="images/4.png">
                         <span class="item-name">Aloo Paratha</span>
+                        <span class="item-rating"><span class="stars">★★★★★</span> 4.5</span>
                         <span class="item-price">₹60</span>
                     </div>
-                    <div class="menu-item">
-                        <span class="item-icon">🫓</span>
+                    <div class="menu-item" data-img="images/5.png">
                         <span class="item-name">Paneer Paratha</span>
+                        <span class="item-rating"><span class="stars">★★★★★</span> 4.6</span>
                         <span class="item-price">₹80</span>
                     </div>
-                    <div class="menu-item">
-                        <span class="item-icon">🫓</span>
+                    <div class="menu-item" data-img="images/6.png">
                         <span class="item-name">Gobi Paratha (Seasonal)</span>
+                        <span class="item-rating"><span class="stars">★★★★☆</span> 4.4</span>
                         <span class="item-price">₹80</span>
                     </div>
-                    <div class="menu-item">
-                        <span class="item-icon">🍚</span>
+                    <div class="menu-item" data-img="images/7.png">
                         <span class="item-name">Dal Chawal</span>
+                        <span class="item-rating"><span class="stars">★★★★☆</span> 4.2</span>
                         <span class="item-price">₹80</span>
                     </div>
-                    <div class="menu-item">
-                        <span class="item-icon">🍚</span>
+                    <div class="menu-item" data-img="images/8.png">
                         <span class="item-name">Dal Khichdi</span>
+                        <span class="item-rating"><span class="stars">★★★★☆</span> 4.1</span>
                         <span class="item-price">₹80</span>
                     </div>
-                    <div class="menu-item">
-                        <span class="item-icon">🍛</span>
+                    <div class="menu-item" data-img="images/1.png">
                         <span class="item-name">Egg Curry Rice (2 eggs)</span>
+                        <span class="item-rating"><span class="stars">★★★★★</span> 4.5</span>
                         <span class="item-price">₹140</span>
                     </div>
-                    <div class="menu-item">
-                        <span class="item-icon">🐟</span>
+                    <div class="menu-item" data-img="images/2.png">
                         <span class="item-name">Fish Curry Rice (1 piece fish)</span>
+                        <span class="item-rating"><span class="stars">★★★★★</span> 4.7</span>
                         <span class="item-price">₹150</span>
                     </div>
                 </div>
@@ -236,69 +264,69 @@
             <div class="menu-category" data-category="chinese">
                 <h3>CHINESE – NON-VEG</h3>
                 <div class="menu-items">
-                    <div class="menu-item">
-                        <span class="item-icon">🍗</span>
+                    <div class="menu-item" data-img="images/3.png">
                         <span class="item-name">Chilli Chicken</span>
+                        <span class="item-rating"><span class="stars">★★★★★</span> 4.6</span>
                         <span class="item-price">₹350</span>
                     </div>
-                    <div class="menu-item">
-                        <span class="item-icon">🍗</span>
+                    <div class="menu-item" data-img="images/4.png">
                         <span class="item-name">Chicken Manchurian</span>
+                        <span class="item-rating"><span class="stars">★★★★★</span> 4.7</span>
                         <span class="item-price">₹350</span>
                     </div>
-                    <div class="menu-item">
-                        <span class="item-icon">🍗</span>
+                    <div class="menu-item" data-img="images/5.png">
                         <span class="item-name">Garlic Butter Fry Chicken</span>
+                        <span class="item-rating"><span class="stars">★★★★★</span> 4.5</span>
                         <span class="item-price">₹350</span>
                     </div>
-                    <div class="menu-item">
-                        <span class="item-icon">🍗</span>
+                    <div class="menu-item" data-img="images/6.png">
                         <span class="item-name">Kung Pao Chicken</span>
+                        <span class="item-rating"><span class="stars">★★★★★</span> 4.4</span>
                         <span class="item-price">₹350</span>
                     </div>
-                    <div class="menu-item">
-                        <span class="item-icon">🍗</span>
+                    <div class="menu-item" data-img="images/7.png">
                         <span class="item-name">Chicken with Mushroom</span>
+                        <span class="item-rating"><span class="stars">★★★★☆</span> 4.3</span>
                         <span class="item-price">₹350</span>
                     </div>
-                    <div class="menu-item">
-                        <span class="item-icon">🍗</span>
+                    <div class="menu-item" data-img="images/8.png">
                         <span class="item-name">Chicken with Baby Corn</span>
+                        <span class="item-rating"><span class="stars">★★★★☆</span> 4.2</span>
                         <span class="item-price">₹350</span>
                     </div>
-                    <div class="menu-item">
-                        <span class="item-icon">🍗</span>
+                    <div class="menu-item" data-img="images/1.png">
                         <span class="item-name">Chicken Hot and Sour</span>
+                        <span class="item-rating"><span class="stars">★★★★☆</span> 4.3</span>
                         <span class="item-price">₹350</span>
                     </div>
-                    <div class="menu-item">
-                        <span class="item-icon">🍗</span>
+                    <div class="menu-item" data-img="images/2.png">
                         <span class="item-name">Chicken Sweet and Sour</span>
+                        <span class="item-rating"><span class="stars">★★★★☆</span> 4.2</span>
                         <span class="item-price">₹350</span>
                     </div>
-                    <div class="menu-item">
-                        <span class="item-icon">🍗</span>
+                    <div class="menu-item" data-img="images/3.png">
                         <span class="item-name">Chicken with Spinach, Mushroom & Baby Corn</span>
+                        <span class="item-rating"><span class="stars">★★★★★</span> 4.5</span>
                         <span class="item-price">₹350</span>
                     </div>
-                    <div class="menu-item">
-                        <span class="item-icon">🍗</span>
+                    <div class="menu-item" data-img="images/4.png">
                         <span class="item-name">Shredded Chicken with Peanut Butter Sauce</span>
+                        <span class="item-rating"><span class="stars">★★★★★</span> 4.6</span>
                         <span class="item-price">₹350</span>
                     </div>
-                    <div class="menu-item">
-                        <span class="item-icon">🍗</span>
+                    <div class="menu-item" data-img="images/5.png">
                         <span class="item-name">Lemon Chicken</span>
+                        <span class="item-rating"><span class="stars">★★★★☆</span> 4.2</span>
                         <span class="item-price">₹350</span>
                     </div>
-                    <div class="menu-item">
-                        <span class="item-icon">🥚</span>
+                    <div class="menu-item" data-img="images/6.png">
                         <span class="item-name">Egg Chilli</span>
+                        <span class="item-rating"><span class="stars">★★★★☆</span> 4.1</span>
                         <span class="item-price">₹350</span>
                     </div>
-                    <div class="menu-item">
-                        <span class="item-icon">🥚</span>
+                    <div class="menu-item" data-img="images/7.png">
                         <span class="item-name">Egg Mushroom</span>
+                        <span class="item-rating"><span class="stars">★★★★☆</span> 4.2</span>
                         <span class="item-price">₹350</span>
                     </div>
                 </div>
@@ -308,34 +336,34 @@
             <div class="menu-category" data-category="fish">
                 <h3>FISH</h3>
                 <div class="menu-items">
-                    <div class="menu-item">
-                        <span class="item-icon">🐟</span>
+                    <div class="menu-item" data-img="images/8.png">
                         <span class="item-name">Chilli Fish</span>
+                        <span class="item-rating"><span class="stars">★★★★★</span> 4.7</span>
                         <span class="item-price">₹300</span>
                     </div>
-                    <div class="menu-item">
-                        <span class="item-icon">🐟</span>
+                    <div class="menu-item" data-img="images/1.png">
                         <span class="item-name">Garlic Fish</span>
+                        <span class="item-rating"><span class="stars">★★★★★</span> 4.6</span>
                         <span class="item-price">₹350</span>
                     </div>
-                    <div class="menu-item">
-                        <span class="item-icon">🐟</span>
+                    <div class="menu-item" data-img="images/2.png">
                         <span class="item-name">Fish in Schezwan Sauce</span>
+                        <span class="item-rating"><span class="stars">★★★★☆</span> 4.4</span>
                         <span class="item-price">₹300</span>
                     </div>
-                    <div class="menu-item">
-                        <span class="item-icon">🐟</span>
+                    <div class="menu-item" data-img="images/3.png">
                         <span class="item-name">Thai Fish (Red Curry / Green Curry)</span>
+                        <span class="item-rating"><span class="stars">★★★★★</span> 4.5</span>
                         <span class="item-price">₹350</span>
                     </div>
-                    <div class="menu-item">
-                        <span class="item-icon">🐟</span>
+                    <div class="menu-item" data-img="images/4.png">
                         <span class="item-name">Fish in Oyster Sauce</span>
+                        <span class="item-rating"><span class="stars">★★★★☆</span> 4.3</span>
                         <span class="item-price">₹350</span>
                     </div>
-                    <div class="menu-item">
-                        <span class="item-icon">🐟</span>
+                    <div class="menu-item" data-img="images/5.png">
                         <span class="item-name">Fish in Hot Garlic Pepper</span>
+                        <span class="item-rating"><span class="stars">★★★★☆</span> 4.2</span>
                         <span class="item-price">₹350</span>
                     </div>
                 </div>
@@ -345,59 +373,59 @@
             <div class="menu-category" data-category="veg">
                 <h3>VEG SELECTION</h3>
                 <div class="menu-items">
-                    <div class="menu-item">
-                        <span class="item-icon">🥗</span>
+                    <div class="menu-item" data-img="images/6.png">
                         <span class="item-name">Veg Manchurian</span>
+                        <span class="item-rating"><span class="stars">★★★★☆</span> 4.2</span>
                         <span class="item-price">₹300</span>
                     </div>
-                    <div class="menu-item">
-                        <span class="item-icon">🥗</span>
+                    <div class="menu-item" data-img="images/7.png">
                         <span class="item-name">Cauliflower Manchurian</span>
+                        <span class="item-rating"><span class="stars">★★★★☆</span> 4.1</span>
                         <span class="item-price">₹300</span>
                     </div>
-                    <div class="menu-item">
-                        <span class="item-icon">🧀</span>
+                    <div class="menu-item" data-img="images/8.png">
                         <span class="item-name">Chilli Paneer</span>
+                        <span class="item-rating"><span class="stars">★★★★★</span> 4.6</span>
                         <span class="item-price">₹350</span>
                     </div>
-                    <div class="menu-item">
-                        <span class="item-icon">🥗</span>
+                    <div class="menu-item" data-img="images/1.png">
                         <span class="item-name">Three Treasure Veg</span>
+                        <span class="item-rating"><span class="stars">★★★★☆</span> 4.3</span>
                         <span class="item-price">₹300</span>
                     </div>
-                    <div class="menu-item">
-                        <span class="item-icon">🥬</span>
+                    <div class="menu-item" data-img="images/2.png">
                         <span class="item-name">Spinach with Corn (Choice of Sauce)</span>
+                        <span class="item-rating"><span class="stars">★★★★☆</span> 4.2</span>
                         <span class="item-price">₹320</span>
                     </div>
-                    <div class="menu-item">
-                        <span class="item-icon">🥗</span>
+                    <div class="menu-item" data-img="images/3.png">
                         <span class="item-name">Sweet and Sour Veg</span>
+                        <span class="item-rating"><span class="stars">★★★★☆</span> 4.1</span>
                         <span class="item-price">₹300</span>
                     </div>
-                    <div class="menu-item">
-                        <span class="item-icon">🥔</span>
+                    <div class="menu-item" data-img="images/4.png">
                         <span class="item-name">Chilli Potato</span>
+                        <span class="item-rating"><span class="stars">★★★★☆</span> 4.0</span>
                         <span class="item-price">₹275</span>
                     </div>
-                    <div class="menu-item">
-                        <span class="item-icon">🍄</span>
+                    <div class="menu-item" data-img="images/5.png">
                         <span class="item-name">Mushroom (Choice of Sauce)</span>
+                        <span class="item-rating"><span class="stars">★★★★☆</span> 4.2</span>
                         <span class="item-price">₹325</span>
                     </div>
-                    <div class="menu-item">
-                        <span class="item-icon">🥗</span>
+                    <div class="menu-item" data-img="images/6.png">
                         <span class="item-name">Vegetable Thai Curry (with Steamed Rice)</span>
+                        <span class="item-rating"><span class="stars">★★★★★</span> 4.5</span>
                         <span class="item-price">₹350</span>
                     </div>
-                    <div class="menu-item">
-                        <span class="item-icon">🍄</span>
+                    <div class="menu-item" data-img="images/7.png">
                         <span class="item-name">Mushroom, Green Peas & Baby Corn (Choice of Sauce)</span>
+                        <span class="item-rating"><span class="stars">★★★★☆</span> 4.3</span>
                         <span class="item-price">₹325</span>
                     </div>
-                    <div class="menu-item">
-                        <span class="item-icon">🍄</span>
+                    <div class="menu-item" data-img="images/8.png">
                         <span class="item-name">Devil Mushroom</span>
+                        <span class="item-rating"><span class="stars">★★★★★</span> 4.4</span>
                         <span class="item-price">₹325</span>
                     </div>
                 </div>
@@ -408,73 +436,73 @@
                 <h3>ASSAMESE MENU</h3>
                 <h4>Veg</h4>
                 <div class="menu-items">
-                    <div class="menu-item">
-                        <span class="item-icon">🍛</span>
+                    <div class="menu-item" data-img="images/1.png">
                         <span class="item-name">The Table Special Veg Thali</span>
+                        <span class="item-rating"><span class="stars">★★★★★</span> 4.7</span>
                         <span class="item-price">₹350</span>
                     </div>
-                    <div class="menu-item">
-                        <span class="item-icon">🥔</span>
+                    <div class="menu-item" data-img="images/2.png">
                         <span class="item-name">Alu Bhaji</span>
+                        <span class="item-rating"><span class="stars">★★★★☆</span> 4.3</span>
                         <span class="item-price">₹200</span>
                     </div>
-                    <div class="menu-item">
-                        <span class="item-icon">🥗</span>
+                    <div class="menu-item" data-img="images/3.png">
                         <span class="item-name">Bengena Alu Bhaji</span>
+                        <span class="item-rating"><span class="stars">★★★★☆</span> 4.2</span>
                         <span class="item-price">₹225</span>
                     </div>
-                    <div class="menu-item">
-                        <span class="item-icon">🥗</span>
+                    <div class="menu-item" data-img="images/4.png">
                         <span class="item-name">Koldilor Bhaji</span>
+                        <span class="item-rating"><span class="stars">★★★★☆</span> 4.1</span>
                         <span class="item-price">₹250</span>
                     </div>
                 </div>
                 <h4>Dal</h4>
                 <div class="menu-items">
-                    <div class="menu-item">
-                        <span class="item-icon">🍲</span>
+                    <div class="menu-item" data-img="images/5.png">
                         <span class="item-name">Dail (Plain)</span>
+                        <span class="item-rating"><span class="stars">★★★★☆</span> 4.0</span>
                         <span class="item-price">₹225</span>
                     </div>
-                    <div class="menu-item">
-                        <span class="item-icon">🍲</span>
+                    <div class="menu-item" data-img="images/6.png">
                         <span class="item-name">Maati Dail</span>
+                        <span class="item-rating"><span class="stars">★★★★☆</span> 4.2</span>
                         <span class="item-price">₹225</span>
                     </div>
                 </div>
                 <h4>Fish Special</h4>
                 <div class="menu-items">
-                    <div class="menu-item">
-                        <span class="item-icon">🐟</span>
+                    <div class="menu-item" data-img="images/7.png">
                         <span class="item-name">The Table Special Maas Tenga</span>
+                        <span class="item-rating"><span class="stars">★★★★★</span> 4.8</span>
                         <span class="item-price">₹350</span>
                     </div>
-                    <div class="menu-item">
-                        <span class="item-icon">🐟</span>
+                    <div class="menu-item" data-img="images/8.png">
                         <span class="item-name">Horu Maas Bhoja</span>
+                        <span class="item-rating"><span class="stars">★★★★★</span> 4.6</span>
                         <span class="item-price">₹375</span>
                     </div>
-                    <div class="menu-item">
-                        <span class="item-icon">🐟</span>
+                    <div class="menu-item" data-img="images/1.png">
                         <span class="item-name">The Table Special Maas'r Muri Ghonto</span>
+                        <span class="item-rating"><span class="stars">★★★★★</span> 4.7</span>
                         <span class="item-price">₹400</span>
                     </div>
-                    <div class="menu-item">
-                        <span class="item-icon">🐟</span>
+                    <div class="menu-item" data-img="images/2.png">
                         <span class="item-name">Horu Maas (Patot Diya / Vapot Diya – Steamed)</span>
+                        <span class="item-rating"><span class="stars">★★★★★</span> 4.8</span>
                         <span class="item-price">₹400</span>
                     </div>
                 </div>
                 <h4>Chicken (Broiler / Local)</h4>
                 <div class="menu-items">
-                    <div class="menu-item">
-                        <span class="item-icon">🍗</span>
+                    <div class="menu-item" data-img="images/3.png">
                         <span class="item-name">Mati Dalir Hoite Kukura Mangkho</span>
+                        <span class="item-rating"><span class="stars">★★★★★</span> 4.6</span>
                         <span class="item-price">₹350 / ₹450</span>
                     </div>
-                    <div class="menu-item">
-                        <span class="item-icon">🍗</span>
+                    <div class="menu-item" data-img="images/4.png">
                         <span class="item-name">Tilor Hoite Kukura Mangkho</span>
+                        <span class="item-rating"><span class="stars">★★★★★</span> 4.5</span>
                         <span class="item-price">₹350 / ₹450</span>
                     </div>
                 </div>
@@ -484,79 +512,79 @@
             <div class="menu-category" data-category="starters">
                 <h3>NON-VEG STARTERS</h3>
                 <div class="menu-items">
-                    <div class="menu-item">
-                        <span class="item-icon">🍗</span>
+                    <div class="menu-item" data-img="images/5.png">
                         <span class="item-name">Assorted Tandoori Platter (Non-Veg)</span>
+                        <span class="item-rating"><span class="stars">★★★★★</span> 4.8</span>
                         <span class="item-price">₹550</span>
                     </div>
-                    <div class="menu-item">
-                        <span class="item-icon">🐟</span>
+                    <div class="menu-item" data-img="images/6.png">
                         <span class="item-name">Tandoori Fish Tikka</span>
+                        <span class="item-rating"><span class="stars">★★★★★</span> 4.6</span>
                         <span class="item-price">₹285</span>
                     </div>
-                    <div class="menu-item">
-                        <span class="item-icon">🐟</span>
+                    <div class="menu-item" data-img="images/7.png">
                         <span class="item-name">Fish Masala Kebab</span>
+                        <span class="item-rating"><span class="stars">★★★★☆</span> 4.4</span>
                         <span class="item-price">₹285</span>
                     </div>
-                    <div class="menu-item">
-                        <span class="item-icon">🐟</span>
+                    <div class="menu-item" data-img="images/8.png">
                         <span class="item-name">Fish Hariyali Tikka</span>
+                        <span class="item-rating"><span class="stars">★★★★☆</span> 4.3</span>
                         <span class="item-price">₹285</span>
                     </div>
-                    <div class="menu-item">
-                        <span class="item-icon">🐟</span>
+                    <div class="menu-item" data-img="images/1.png">
                         <span class="item-name">Fish Afghani Tikka</span>
+                        <span class="item-rating"><span class="stars">★★★★☆</span> 4.2</span>
                         <span class="item-price">₹285</span>
                     </div>
-                    <div class="menu-item">
-                        <span class="item-icon">🦐</span>
+                    <div class="menu-item" data-img="images/2.png">
                         <span class="item-name">Tandoori Prawn</span>
+                        <span class="item-rating"><span class="stars">★★★★★</span> 4.7</span>
                         <span class="item-price">₹500</span>
                     </div>
-                    <div class="menu-item">
-                        <span class="item-icon">🍗</span>
+                    <div class="menu-item" data-img="images/3.png">
                         <span class="item-name">Tandoori Chicken (Half / Full)</span>
+                        <span class="item-rating"><span class="stars">★★★★★</span> 4.8</span>
                         <span class="item-price">₹280 / ₹500</span>
                     </div>
-                    <div class="menu-item">
-                        <span class="item-icon">🍗</span>
+                    <div class="menu-item" data-img="images/4.png">
                         <span class="item-name">Chicken Reshmi Kebab</span>
+                        <span class="item-rating"><span class="stars">★★★★☆</span> 4.5</span>
                         <span class="item-price">₹325</span>
                     </div>
-                    <div class="menu-item">
-                        <span class="item-icon">🍗</span>
+                    <div class="menu-item" data-img="images/5.png">
                         <span class="item-name">Chicken Cheese Malai Tikka</span>
+                        <span class="item-rating"><span class="stars">★★★★☆</span> 4.6</span>
                         <span class="item-price">₹325</span>
                     </div>
-                    <div class="menu-item">
-                        <span class="item-icon">🍗</span>
+                    <div class="menu-item" data-img="images/6.png">
                         <span class="item-name">Moroccan Chicken Tikka</span>
+                        <span class="item-rating"><span class="stars">★★★★☆</span> 4.4</span>
                         <span class="item-price">₹325</span>
                     </div>
-                    <div class="menu-item">
-                        <span class="item-icon">🍗</span>
+                    <div class="menu-item" data-img="images/7.png">
                         <span class="item-name">Hariyali Chicken Tikka</span>
+                        <span class="item-rating"><span class="stars">★★★★☆</span> 4.3</span>
                         <span class="item-price">₹325</span>
                     </div>
-                    <div class="menu-item">
-                        <span class="item-icon">🍗</span>
+                    <div class="menu-item" data-img="images/8.png">
                         <span class="item-name">Chicken Boti Kebab</span>
+                        <span class="item-rating"><span class="stars">★★★★☆</span> 4.4</span>
                         <span class="item-price">₹325</span>
                     </div>
-                    <div class="menu-item">
-                        <span class="item-icon">🍗</span>
+                    <div class="menu-item" data-img="images/1.png">
                         <span class="item-name">Chicken Khaas Seekh Kebab</span>
+                        <span class="item-rating"><span class="stars">★★★★★</span> 4.5</span>
                         <span class="item-price">₹325</span>
                     </div>
-                    <div class="menu-item">
-                        <span class="item-icon">🍖</span>
+                    <div class="menu-item" data-img="images/2.png">
                         <span class="item-name">Mutton Khaas Seekh Kebab</span>
+                        <span class="item-rating"><span class="stars">★★★★★</span> 4.6</span>
                         <span class="item-price">₹400</span>
                     </div>
-                    <div class="menu-item">
-                        <span class="item-icon">🍖</span>
+                    <div class="menu-item" data-img="images/3.png">
                         <span class="item-name">Mutton Burra Kebab</span>
+                        <span class="item-rating"><span class="stars">★★★★★</span> 4.7</span>
                         <span class="item-price">₹400</span>
                     </div>
                 </div>
@@ -566,79 +594,79 @@
             <div class="menu-category" data-category="main">
                 <h3>MAIN COURSE – INDIAN VEG</h3>
                 <div class="menu-items">
-                    <div class="menu-item">
-                        <span class="item-icon">🧀</span>
+                    <div class="menu-item" data-img="images/4.png">
                         <span class="item-name">Paneer Lababdar</span>
+                        <span class="item-rating"><span class="stars">★★★★☆</span> 4.4</span>
                         <span class="item-price">₹295</span>
                     </div>
-                    <div class="menu-item">
-                        <span class="item-icon">🧀</span>
+                    <div class="menu-item" data-img="images/5.png">
                         <span class="item-name">Smoked Paneer Butter Masala</span>
+                        <span class="item-rating"><span class="stars">★★★★★</span> 4.7</span>
                         <span class="item-price">₹295</span>
                     </div>
-                    <div class="menu-item">
-                        <span class="item-icon">🧀</span>
+                    <div class="menu-item" data-img="images/6.png">
                         <span class="item-name">Balti Paneer Khade Masala</span>
+                        <span class="item-rating"><span class="stars">★★★★☆</span> 4.3</span>
                         <span class="item-price">₹295</span>
                     </div>
-                    <div class="menu-item">
-                        <span class="item-icon">🧀</span>
+                    <div class="menu-item" data-img="images/7.png">
                         <span class="item-name">Paneer Kurchan</span>
+                        <span class="item-rating"><span class="stars">★★★★☆</span> 4.2</span>
                         <span class="item-price">₹295</span>
                     </div>
-                    <div class="menu-item">
-                        <span class="item-icon">🥬</span>
+                    <div class="menu-item" data-img="images/8.png">
                         <span class="item-name">Palak Paneer</span>
+                        <span class="item-rating"><span class="stars">★★★★★</span> 4.6</span>
                         <span class="item-price">₹295</span>
                     </div>
-                    <div class="menu-item">
-                        <span class="item-icon">🫘</span>
+                    <div class="menu-item" data-img="images/1.png">
                         <span class="item-name">Matar Paneer</span>
+                        <span class="item-rating"><span class="stars">★★★★☆</span> 4.3</span>
                         <span class="item-price">₹295</span>
                     </div>
-                    <div class="menu-item">
-                        <span class="item-icon">🧀</span>
+                    <div class="menu-item" data-img="images/2.png">
                         <span class="item-name">Matar Paneer Bhurji</span>
+                        <span class="item-rating"><span class="stars">★★★★☆</span> 4.2</span>
                         <span class="item-price">₹295</span>
                     </div>
-                    <div class="menu-item">
-                        <span class="item-icon">🌽</span>
+                    <div class="menu-item" data-img="images/3.png">
                         <span class="item-name">Corn Palak</span>
+                        <span class="item-rating"><span class="stars">★★★★☆</span> 4.1</span>
                         <span class="item-price">₹280</span>
                     </div>
-                    <div class="menu-item">
-                        <span class="item-icon">🧀</span>
+                    <div class="menu-item" data-img="images/4.png">
                         <span class="item-name">Malai Kofta</span>
+                        <span class="item-rating"><span class="stars">★★★★★</span> 4.5</span>
                         <span class="item-price">₹295</span>
                     </div>
-                    <div class="menu-item">
-                        <span class="item-icon">🧀</span>
+                    <div class="menu-item" data-img="images/5.png">
                         <span class="item-name">Shahi Paneer</span>
+                        <span class="item-rating"><span class="stars">★★★★★</span> 4.8</span>
                         <span class="item-price">₹295</span>
                     </div>
-                    <div class="menu-item">
-                        <span class="item-icon">🥗</span>
+                    <div class="menu-item" data-img="images/6.png">
                         <span class="item-name">Veg Jalfrezi</span>
+                        <span class="item-rating"><span class="stars">★★★★☆</span> 4.2</span>
                         <span class="item-price">₹280</span>
                     </div>
-                    <div class="menu-item">
-                        <span class="item-icon">🥗</span>
+                    <div class="menu-item" data-img="images/7.png">
                         <span class="item-name">Navratn Korma</span>
+                        <span class="item-rating"><span class="stars">★★★★☆</span> 4.3</span>
                         <span class="item-price">₹280</span>
                     </div>
-                    <div class="menu-item">
-                        <span class="item-icon">🥗</span>
+                    <div class="menu-item" data-img="images/8.png">
                         <span class="item-name">Veg Makhanwala</span>
+                        <span class="item-rating"><span class="stars">★★★★☆</span> 4.4</span>
                         <span class="item-price">₹295</span>
                     </div>
-                    <div class="menu-item">
-                        <span class="item-icon">🥗</span>
+                    <div class="menu-item" data-img="images/1.png">
                         <span class="item-name">Aloo Gobhi (Seasonal)</span>
+                        <span class="item-rating"><span class="stars">★★★★☆</span> 4.1</span>
                         <span class="item-price">₹295</span>
                     </div>
-                    <div class="menu-item">
-                        <span class="item-icon">🥔</span>
+                    <div class="menu-item" data-img="images/2.png">
                         <span class="item-name">Aloo Jeera</span>
+                        <span class="item-rating"><span class="stars">★★★★☆</span> 4.0</span>
                         <span class="item-price">₹280</span>
                     </div>
                 </div>
@@ -792,3 +820,7 @@
             <p>Rating: 4.3/5 | Multi-cuisine Dining Venue</p>
         </div>
     </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
