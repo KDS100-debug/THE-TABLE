@@ -2,27 +2,83 @@
 document.addEventListener('DOMContentLoaded', function() {
     const hamburger = document.querySelector('.hamburger');
     const navItems = document.querySelector('.nav-items');
+    const navOverlay = document.querySelector('.nav-overlay');
+    let lastFocusedElement = null;
     
-    // Toggle menu on hamburger click
-    hamburger.addEventListener('click', function() {
-        navItems.classList.toggle('active');
+    // Toggle menu on hamburger click (also animate hamburger and show overlay)
+    hamburger.addEventListener('click', function(e) {
+        e.stopPropagation();
+        const opening = !navItems.classList.contains('active');
+        if (opening) {
+            lastFocusedElement = document.activeElement;
+            navItems.classList.add('active');
+            hamburger.classList.add('open');
+            if (navOverlay) navOverlay.classList.add('active');
+            hamburger.setAttribute('aria-expanded', 'true');
+            navItems.setAttribute('aria-hidden', 'false');
+            // focus first link
+            const firstLink = navItems.querySelector('.nav-link');
+            if (firstLink) firstLink.focus();
+            // listen for Escape and trap Tab
+            document.addEventListener('keydown', handleKeydown);
+        } else {
+            closeNav();
+        }
     });
 
     // Close menu when a nav link is clicked
     const navLinks = document.querySelectorAll('.nav-link');
     navLinks.forEach(link => {
         link.addEventListener('click', function() {
-            navItems.classList.remove('active');
+            closeNav();
         });
     });
 
-    // Close menu when clicking outside
+    // Close menu when clicking outside or on overlay
+    if (navOverlay) {
+        navOverlay.addEventListener('click', function() {
+            closeNav();
+        });
+    }
+
     document.addEventListener('click', function(event) {
         const isClickInsideNav = event.target.closest('.navbar');
         if (!isClickInsideNav && navItems.classList.contains('active')) {
-            navItems.classList.remove('active');
+            closeNav();
         }
     });
+
+    function closeNav() {
+        navItems.classList.remove('active');
+        hamburger.classList.remove('open');
+        if (navOverlay) navOverlay.classList.remove('active');
+        hamburger.setAttribute('aria-expanded', 'false');
+        navItems.setAttribute('aria-hidden', 'true');
+        document.removeEventListener('keydown', handleKeydown);
+        if (lastFocusedElement) lastFocusedElement.focus();
+    }
+
+    // basic keyboard handling and focus trap inside nav
+    function handleKeydown(e) {
+        if (e.key === 'Escape') {
+            closeNav();
+            return;
+        }
+        if (e.key === 'Tab') {
+            const focusable = Array.from(navItems.querySelectorAll('a, button, [tabindex]:not([tabindex="-1"])'))
+                .filter(el => !el.hasAttribute('disabled'));
+            if (focusable.length === 0) return;
+            const first = focusable[0];
+            const last = focusable[focusable.length -1];
+            if (e.shiftKey && document.activeElement === first) {
+                e.preventDefault();
+                last.focus();
+            } else if (!e.shiftKey && document.activeElement === last) {
+                e.preventDefault();
+                first.focus();
+            }
+        }
+    }
 
     // Menu Filter Functionality
     const filterButtons = document.querySelectorAll('.filter-btn');
