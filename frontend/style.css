@@ -44,11 +44,16 @@ body {
 .navbar {
     background: linear-gradient(135deg, rgba(230, 57, 70, 0.98) 0%, rgba(199, 16, 23, 0.98) 100%);
     padding: 1.2rem 0;
-    
+}
 
-    .nav-items.active {
-        right: 0;
-    }
+.navbar-container {
+    width: min(1400px, 100%);
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
 }
 
 /* Brand Section */
@@ -1323,11 +1328,6 @@ main {
     }
 
     .nav-items .nav-link::before { display:none; }
-    }
-
-    .nav-items.active {
-        right: 0;
-    }
 
     .nav-link {
         font-size: 0.9rem;
@@ -1669,4 +1669,3 @@ main {
         font-size: 1rem;
     }
 }
-
